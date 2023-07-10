@@ -1,0 +1,13 @@
+body{
+    background-image: url("../img/fond_login.svg");
+}
+
+img{
+    float: left;
+    width: 80% !important;
+    margin-left: 10%;
+}
+
+.case_image{
+    background-color: rgb(143 , 109, 255);
+}

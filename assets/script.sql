@@ -1,5 +1,6 @@
 create database regime;
-use regime
+
+use regime;
 
 create table utilisateur(
     idutilisateur int primary key not null auto_increment,

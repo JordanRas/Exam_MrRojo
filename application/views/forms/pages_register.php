@@ -5,13 +5,17 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>registrer</title>
+  <title>S'inscrire</title>
+
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="<?php echo site_url("assets/img/favicon.png"); ?>" rel="icon">
-  <link href="<?php echo site_url("assets/img/apple-touch-icon.png"); ?>" rel="apple-touch-icon">
+  <!-- <link href="<?php echo site_url("assets/img/favicon.png"); ?>" rel="icon">
+  <link href="<?php echo site_url("assets/img/apple-touch-icon.png"); ?>" rel="apple-touch-icon"> -->
+
+  <link href="<?php echo site_url("assets/img/icone.png"); ?>" rel="icon">
+
 
   <!-- Vendor CSS Files -->
   <link href="<?php echo site_url("assets/vendor/bootstrap/css/bootstrap.min.css"); ?>" rel="stylesheet">
@@ -24,6 +28,9 @@
 
   <!-- Template Main CSS File -->
   <link href="<?php echo site_url("assets/css/style2.css"); ?>" rel="stylesheet">
+
+  <link href="<?php echo site_url("assets/css/register.css"); ?>" rel="stylesheet">
+
 
 </head>
 
@@ -40,11 +47,17 @@
               <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
                   <img src="assets/img/logo.png" alt="">
-                  <span class="d-none d-lg-block">Inscription</span>
+
+                  <!-- <span class="d-none d-lg-block">Inscription</span> -->
+
                 </a>
               </div><!-- End Logo -->
 
               <div class="card mb-3">
+
+              <div class="case_image">
+                    <img src="<?php echo base_url(); ?>assets/img/sary_login.png">
+                </div>
 
                 <div class="card-body">
 
@@ -100,7 +113,9 @@
               </div>
 
               <div class="credits">
-                Designed by <a href="#"></a>
+
+                <!-- Designed by <a href="#"></a> -->
+
               </div>
 
             </div>

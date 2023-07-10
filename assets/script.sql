@@ -1,4 +1,5 @@
 create database regime;
+
 use regime;
 
 create table utilisateur(

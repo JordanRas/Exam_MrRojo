@@ -17,6 +17,7 @@
   <!-- <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
 
+
   <!-- Vendor CSS Files -->
   <link href="<?php echo site_url("assets/vendor/bootstrap/css/bootstrap.min.css"); ?>" rel="stylesheet">
   <link href="<?php echo site_url("assets/vendor/bootstrap-icons/bootstrap-icons.css"); ?>" rel="stylesheet">
@@ -27,7 +28,9 @@
   <link href="<?php echo site_url("assets/vendor/simple-datatables/style.css"); ?>" rel="stylesheet">
 
   <link href="<?php echo site_url("assets/css/style2.css"); ?>" rel="stylesheet">
+
   <link href="<?php echo site_url("assets/css/index.css"); ?>" rel="stylesheet">
+
 </head>
 
 <body>
@@ -43,6 +46,7 @@
 
               <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
+
                   <!-- <span class="d-none d-lg-block">Se connecter</span> -->
                 </a>
               </div><!-- End Logo -->
@@ -51,6 +55,7 @@
                 <div class="case_image">
                     <img src="<?php echo base_url(); ?>assets/img/sary_login.png">
                 </div>
+
 
                 <div class="card-body">
 
@@ -90,7 +95,9 @@
               </div>
 
               <div class="credits">
+
                 <!-- Designed by <a href="#"></a> -->
+
               </div>
 
             </div>

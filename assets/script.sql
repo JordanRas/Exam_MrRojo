@@ -1,4 +1,5 @@
 create database regime;
+
 use regime;
 
 CREATE TABLE Genre(
@@ -8,6 +9,7 @@ CREATE TABLE Genre(
 
 INSERT INTO Genre(nomgenre) VALUES('Homme');
 INSERT INTO Genre(nomgenre) VALUES('Femme');
+
 
 create table utilisateur(
     idutilisateur int primary key not null auto_increment,

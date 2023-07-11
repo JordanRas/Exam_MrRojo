@@ -64,7 +64,7 @@ class Aliment extends CI_Model
      */
     public function insert($data)
     {
-        $data = $this->escape_post($data);
+        // $data = $this->escape_post($data);
         
         $this->db->insert('aliment', $data);
 

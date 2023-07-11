@@ -85,17 +85,20 @@
                                             <p class="text-primary m-0 fw-bold">Inserer le nouveau menu</p>
                                         </div>
                                         <div class="card-body">
-                                            <form>
+
+                                            <form action="<?php echo site_url('backoffice/nouveau_menu_traitement'); ?>" method="POST" >
+                                                
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="username"><strong>Nom</strong></label><input class="form-control" type="text" id="username" placeholder="user.name" name="username"></div>
+                                                        <div class="mb-3"><label class="form-label" for="username"><strong>Nom</strong></label><input class="form-control" type="text" id="nom" placeholder="nom" name="nom"></div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="email"><strong>Menu pour&nbsp;</strong><br></label><select class="form-select">
+                                                        <div class="mb-3"><label class="form-label" for="email"><strong>Menu pour&nbsp;</strong><br></label><select class="form-select" name="idcategorieregime">
                                                                 <optgroup label="This is a group">
-                                                                    <option value="12" selected="">This is item 1</option>
-                                                                    <option value="13">This is item 2</option>
-                                                                    <option value="14">This is item 3</option>
+                                                                    <?php for ($i=0; $i < count($listecategorie_regime); $i++) { ?>a
+                                                                        <option value="<?php echo $listecategorie_regime[$i]->get_id_categorie_regime(); ?>"><?php echo $listecategorie_regime[$i]->get_nom(); ?> </option>
+                                                                   <?php } ?>
+
                                                                 </optgroup>
                                                             </select></div>
                                                     </div>

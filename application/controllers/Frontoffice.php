@@ -7,7 +7,14 @@
         public function indexfront(){
             // echo("INDEX FRONT");
 
-            $this->load->view('forms/index_client');
+            $userdata=$this->session->userdata('user');
+            $data = array();
+            $data['userdata']=$userdata;
+            $this->load->model('Regime');
+            $listeregime=$this->Regime->select();
+            $data['listeregime']=$listeregime;
+            $this->load->view('forms/index_client', $data);
+            
 
         }
         

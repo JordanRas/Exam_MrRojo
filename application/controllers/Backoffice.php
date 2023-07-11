@@ -13,7 +13,11 @@ require('Basesession.php');
 
         public function insert_menu(){
             // echo("INDEX BACK");
-            $this->load->view('forms/nouveau_menu');
+
+            $this->load->model('Categorie_regime');
+            $data['listecategorie_regime']=$this->Categorie_regime->select();
+            $this->load->view('forms/nouveau_menu', $data);
+            
         }
 
 
@@ -41,6 +45,18 @@ require('Basesession.php');
         public function details($id)
         {
             echo("DETAILS");
+        }
+
+        public function nouveau_menu_traitement(){
+            // var_dump($this->input->post());
+            // $id_categorie_regime=$this->input->post('id_categorie_regime');
+            // $data['nom']=$nom;
+            // $data['idcategorieregime']=$id_categorie_regime;
+            
+            $this->load->model('Aliment');
+             $test=$this->Aliment->insert($this->input->post());
+             echo $test;
+             redirect(site_url('backoffice/insert_menu'));
         }
     }
 ?> 

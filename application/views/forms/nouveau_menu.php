@@ -85,6 +85,7 @@
                                             <p class="text-primary m-0 fw-bold">Inserer le nouveau menu</p>
                                         </div>
                                         <div class="card-body">
+
                                             <form action="<?php echo site_url('backoffice/nouveau_menu_traitement'); ?>" method="POST" >
                                                 
                                                 <div class="row">
@@ -97,6 +98,7 @@
                                                                     <?php for ($i=0; $i < count($listecategorie_regime); $i++) { ?>a
                                                                         <option value="<?php echo $listecategorie_regime[$i]->get_id_categorie_regime(); ?>"><?php echo $listecategorie_regime[$i]->get_nom(); ?> </option>
                                                                    <?php } ?>
+
                                                                 </optgroup>
                                                             </select></div>
                                                     </div>

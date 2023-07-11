@@ -6,6 +6,7 @@
         
         public function indexfront(){
             // echo("INDEX FRONT");
+
             $userdata=$this->session->userdata('user');
             $data = array();
             $data['userdata']=$userdata;
@@ -14,6 +15,7 @@
             $data['listeregime']=$listeregime;
             $this->load->view('forms/index_client', $data);
             
+
         }
         
     }

@@ -13,6 +13,7 @@ require('Basesession.php');
 
         public function insert_menu(){
             // echo("INDEX BACK");
+
             $this->load->model('Categorie_regime');
             $data['listecategorie_regime']=$this->Categorie_regime->select();
             $this->load->view('forms/nouveau_menu', $data);

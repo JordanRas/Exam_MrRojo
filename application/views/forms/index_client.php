@@ -20,6 +20,7 @@
                     <li class="nav-item"><a class="nav-link" href="projects.html">Resultats</a></li>
                     <li class="nav-item"></li>
                     <li class="nav-item"></li>
+
                 </ul><img src="<?php echo base_url(); ?>assets/img/icône-d-utilisateur-silhouette-blanche-sur-le-fond-carré-bleu-114279931.jpg" style="height: 38px;border-radius: 23px;margin-right: 10px;"><span class="navbar-text"><?php echo $userdata["nom"]; ?></span>
             </div>
         </div>
@@ -57,11 +58,13 @@
                     <div class="col mb-5">
                         <div class="card shadow-sm">
                             <div class="card-body px-4 py-5 px-md-5">
+
                                 <h5 class="fw-bold card-title">Vous souhaitez gagnez du poids?</h5>
                                 <?php for ($i=0; $i < count($listeregime); $i++) { ?>
             
                                     <p class="text-muted card-text mb-4">Categorie Regime: <?php echo $listeregime[$i]->get_categorie_regime()->get_nom(); ?> Montant: <?php echo $listeregime[$i]->get_montant(); ?> Duree: <?php echo $listeregime[$i]->get_duree();  ?> Poids: <?php echo $listeregime[$i]->get_poids(); ?> </p><button class="btn btn-primary shadow" type="button">En savoir plus</button>
                                 <?php } ?>
+
                             </div>
                         </div>
                     </div>

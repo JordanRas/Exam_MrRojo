@@ -65,7 +65,7 @@ class Aliment extends CI_Model
     public function insert($data)
     {
         $data = $this->escape_post($data);
-        // Effectue l'insertion dans la table "utilisateurs"
+        
         $this->db->insert('aliment', $data);
 
         // Vérifie s'il y a une erreur lors de l'insertion
@@ -118,7 +118,7 @@ class Aliment extends CI_Model
         $this->db->where("idaliment", $id);
         $this->db->from("aliment");
         $query = $this->db->get();
-        $query = $query->row();
+        $query = $query->row_array();
         $aliment = new Aliment();
         $aliment->set_nom($query["nom"]);
         $aliment->set_id_aliment($query["idaliment"]);

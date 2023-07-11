@@ -110,9 +110,9 @@ class Activite extends CI_Model {
     public function select_by_id($id) {
         $this->db->select('*');
         $this->db->where("idactivite", $id);
-        $this->db->from("idactivite");
+        $this->db->from("activite");
         $query = $this->db->get();
-        $query = $query->row();
+        $query = $query->row_array();
         $activite = new Activite();
         $activite->set_nom($query["nom"]);
         $activite->set_id_activite($query["idactivite"]);

@@ -6,6 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>S'inscrire</title>
+
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -14,6 +15,7 @@
   <link href="<?php echo site_url("assets/img/apple-touch-icon.png"); ?>" rel="apple-touch-icon"> -->
 
   <link href="<?php echo site_url("assets/img/icone.png"); ?>" rel="icon">
+
 
   <!-- Vendor CSS Files -->
   <link href="<?php echo site_url("assets/vendor/bootstrap/css/bootstrap.min.css"); ?>" rel="stylesheet">
@@ -26,7 +28,9 @@
 
   <!-- Template Main CSS File -->
   <link href="<?php echo site_url("assets/css/style2.css"); ?>" rel="stylesheet">
+
   <link href="<?php echo site_url("assets/css/register.css"); ?>" rel="stylesheet">
+
 
 </head>
 
@@ -43,7 +47,9 @@
               <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
                   <img src="assets/img/logo.png" alt="">
+
                   <!-- <span class="d-none d-lg-block">Inscription</span> -->
+
                 </a>
               </div><!-- End Logo -->
 
@@ -107,7 +113,9 @@
               </div>
 
               <div class="credits">
+
                 <!-- Designed by <a href="#"></a> -->
+
               </div>
 
             </div>

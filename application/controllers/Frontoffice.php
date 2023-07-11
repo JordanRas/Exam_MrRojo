@@ -5,7 +5,10 @@
     class Frontoffice extends Basesession{
         
         public function indexfront(){
-            echo("INDEX FRONT");
+            // echo("INDEX FRONT");
+
+            $this->load->view('forms/index_client');
+
         }
         
     }
